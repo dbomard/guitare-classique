@@ -1,0 +1,80 @@
+/* Corps de page */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0px;
+}
+
+/* Header */
+#logo {
+    max-width: 150px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+}
+
+header ul {
+    text-align: center;
+    padding: 0px;
+}
+
+header ul * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+header nav a {
+    padding: 0.3em 0;
+    color: black;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+header nav a:before,
+header nav a:after {
+    position: absolute;
+    transition: all 0.35s ease;
+}
+
+header nav a:before {
+    bottom: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #e67e22;
+}
+
+header nav a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: black;
+    white-space: nowrap;
+}
+
+header nav ul li:hover a,
+header .current a {
+    transform: translateY(100%);
+}
+
+header nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
