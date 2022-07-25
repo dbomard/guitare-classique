@@ -4,6 +4,10 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0px;
+    background-image: url("../img/guitar-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 /* Header */
@@ -28,7 +32,7 @@ header ul * {
 
 header nav a {
     padding: 0.3em 0;
-    color: black;
+    color: rgb(255, 255, 255);
     position: relative;
     display: inline-block;
     letter-spacing: 1px;
@@ -48,7 +52,7 @@ header nav a:before {
     height: 3px;
     width: 100%;
     content: "";
-    background-color: #e67e22;
+    background-color: #a75309;
 }
 
 header nav a:after {
@@ -57,7 +61,7 @@ header nav a:after {
     bottom: 100%;
     left: 0;
     content: attr(data-hover);
-    color: black;
+    color: rgb(255, 255, 255);
     white-space: nowrap;
 }
 
@@ -77,4 +81,15 @@ header nav li {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+footer :first-child{
+    width: 80%;
+    margin-left: 10%;
+    justify-self: start;
+}
+footer :last-child{
+    width: 80%;
+    margin-right: 10%;
+    text-align: right;
+    justify-self: end;
 }
