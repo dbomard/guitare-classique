@@ -1,9 +1,9 @@
 /** style.css DBO20220816 **/
 :root{
     --creme : #FCF8E8;
-    --green : #94B49F;
+    --green : #799482;
     --orange : #ECB390;
-    --red : #DF7861;
+    --red : #d4725c;
 }
 
 /* Corps de page */
@@ -27,6 +27,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 2fr 5fr 1fr;
+    background-color: var(--orange);
 }
 
 header ul {
@@ -90,6 +91,7 @@ header nav li {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--orange);
 }
 footer :first-child{
     width: 80%;
