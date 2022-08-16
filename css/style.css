@@ -1,9 +1,11 @@
 /** style.css DBO20220816 **/
+:root{
+    --couleur1 : #c45d18;
+}
 /* Corps de page */
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,402;0,700;1,300;1,400;1,700&display=swap');
 
 body {
-    font-family: 'Raleway', sans-serif;
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -12,6 +14,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    color: chartreuse;
 }
 
 /* Header */
