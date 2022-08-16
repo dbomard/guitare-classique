@@ -1,9 +1,9 @@
 /** style.css DBO20220816 **/
-:root{
-    --creme : #FCF8E8;
-    --green : #799482;
-    --orange : #ECB390;
-    --red : #d4725c;
+:root {
+    --creme: #FCF8E8;
+    --green: #799482;
+    --orange: #ECB390;
+    --red: #d4725c;
 }
 
 /* Corps de page */
@@ -38,6 +38,8 @@ header ul {
 header ul * {
     box-sizing: border-box;
     transition: all 0.35s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 header nav a {
@@ -93,12 +95,14 @@ footer {
     grid-template-columns: 1fr 1fr;
     background-color: var(--orange);
 }
-footer :first-child{
+
+footer :first-child {
     width: 80%;
     margin-left: 10%;
     justify-self: start;
 }
-footer :last-child{
+
+footer :last-child {
     width: 80%;
     margin-right: 10%;
     text-align: right;
