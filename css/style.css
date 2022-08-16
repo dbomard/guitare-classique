@@ -5,6 +5,7 @@
     --orange : #ECB390;
     --red : #DF7861;
 }
+
 /* Corps de page */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,402;0,700;1,300;1,400;1,700&display=swap');
 
@@ -13,10 +14,8 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0px;
-    background-image: url("../img/guitar-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+    background-color: var(--creme);
+    color: var(--red);
     font-family: 'Raleway', sans-serif;
 }
 
