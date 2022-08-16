@@ -70,7 +70,7 @@ header nav a:after {
     bottom: 100%;
     left: 0;
     content: attr(data-hover);
-    color: var(--creme);
+    color: var(--red);
     white-space: nowrap;
 }
 
