@@ -41,7 +41,7 @@ header ul * {
 
 header nav a {
     padding: 0.3em 0;
-    color: rgb(255, 255, 255);
+    color: var(--red);
     position: relative;
     display: inline-block;
     letter-spacing: 1px;
@@ -61,7 +61,7 @@ header nav a:before {
     height: 3px;
     width: 100%;
     content: "";
-    background-color: #a75309;
+    background-color: var(--red);
 }
 
 header nav a:after {
@@ -70,7 +70,7 @@ header nav a:after {
     bottom: 100%;
     left: 0;
     content: attr(data-hover);
-    color: rgb(255, 255, 255);
+    color: var(--creme);
     white-space: nowrap;
 }
 
