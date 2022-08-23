@@ -19,6 +19,25 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Effet popup */
+.popup a{
+    position: relative;
+}
+
+.popup img {
+    display: none;
+    position: absolute;
+}
+
+.popup:hover {
+    cursor: pointer;
+}
+
+.popup:hover img {
+    display: block;
+}
+
+
 /* Header */
 #logo {
     max-width: 150px;
