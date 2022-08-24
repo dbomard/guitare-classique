@@ -34,8 +34,8 @@ body {
 .popup:hover a {
     display: inline;
     position: absolute;
-    top: -200px;
-    left: -100px;
+    left: 50%;
+    translate: -33% -100%;
 }
 
 
