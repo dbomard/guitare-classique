@@ -20,21 +20,22 @@ body {
 }
 
 /* Effet popup */
-.popup a{
+.popup{
     position: relative;
 }
-
-.popup img {
+.popup a{
     display: none;
-    position: absolute;
 }
 
 .popup:hover {
     cursor: pointer;
 }
 
-.popup:hover img {
-    display: block;
+.popup:hover a {
+    display: inline;
+    position: absolute;
+    top: -200px;
+    left: -100px;
 }
 
 
