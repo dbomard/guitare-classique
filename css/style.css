@@ -20,24 +20,46 @@ body {
 }
 
 /* Effet popup */
-.popup{
+.popup {
     position: relative;
+    display: inline-block;
 }
-.popup a{
+
+.popup img{
+    width: 256px;
+}
+
+.popup span {
+    padding: 10px;
+    background-color: #FCF8E8;
+    box-shadow: 5px 5px 5px 5px #d4725ca9;
     display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 .popup:hover {
     cursor: pointer;
 }
 
-.popup:hover a {
-    display: inline;
-    position: absolute;
+.popup:hover span {
+    display: block;
     left: 50%;
-    translate: -50% -100%;
+    bottom: 1.1em;
+    transform: translateX(-50%);
+    animation: move-up .1s linear 1;
 }
 
+@-webkit-keyframes move-up {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 1.1em;
+    }
+}
 
 /* Header */
 #logo {
