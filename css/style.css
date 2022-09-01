@@ -37,6 +37,8 @@ body {
     position: absolute;
     transform: translateX(-50%);
     border-radius: 5px;
+    height: 0px;
+    opacity: 0;
 }
 
 .popup:hover {
@@ -47,11 +49,14 @@ body {
     display: block;
     left: 50%;
     bottom: 1.1em;
+    height:fit-content;
+    opacity: 1;
     transform: translateX(-50%);
-    animation: move-up .1s linear 1;
+    animation: move-up .15s linear 1;
+    transition: opacity .3s;
 }
 
-@-webkit-keyframes move-up {
+@keyframes move-up {
     from {
         bottom: 0;
     }
