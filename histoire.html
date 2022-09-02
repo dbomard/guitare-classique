@@ -39,14 +39,10 @@
         <section id="baroque">
             <h2>L'époque baroque</h2>
             <p>&Agrave; cette époque, deux instruments de la famille des cordes pincées dominent le paysage musical
-                européen ;
-                <span class="popup"><span><a
-                        title="Trobairitz, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
-                        href="https://commons.wikimedia.org/wiki/File:Jota_Martinez_vihuela.jpg"><img width="256"
-                            alt="Jota Martinez vihuela"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jota_Martinez_vihuela.jpg/256px-Jota_Martinez_vihuela.jpg"></a></span>
-                    vihuela
-                </span> en Espagne et le luth dans le reste de l'Europe. Ces instruments servent la
+                européen ; la<span class="has-popup" id="vihuela" onclick="show_popup(this)"> vihuela </span>en Espagne
+                et
+                le<span class="has-popup" id="vihuela" onclick="show_popup(this)"> luth </span>dans le reste de
+                l'Europe. Ces instruments servent la
                 plupart du temps d'instrument d'accompagnement des chanteurs.</p>
             <p>C'est à cette même époque qu'un nouvel instrument va faire son apparition : la guiterne. Elle possède la
                 forme en huit (ou infini) de la vihuela et quatre cordes doublées comme sur le luth. Le doublage des
@@ -61,6 +57,26 @@
         <section id="xxe-siecle">
             <h2>Le XXe siècle</h2>
         </section>
+        <dialog class="popup">
+            <div class="closing-cross" title="Fermer" onclick="close_dialog()">X</div>
+            <img src=""
+                title=""
+                alt="" />
+            <div>
+                <h3>"Una Pavana"</h3>
+                <p>de Alonso Mudarra</p>
+                <audio controls>
+                    <source src="./audio/mudarra-pavana.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+            <div>
+                <h3>"Romanesca o Guárdame las vacas"</h3>
+                <p>de Alonso Mudarra</p>
+                <audio controls>
+                    <source src="./audio/mudarra-romanesca.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+        </dialog>
     </main>
     <footer>
         <p><a href="mentions-legales.html">Mentions légales</a></p>
