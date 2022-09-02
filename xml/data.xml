@@ -1,0 +1,20 @@
+<histoire>
+    <instrument>
+        <nom>vihuela</nom>
+        <image>
+            <file></file>
+        </image>
+        <piste>
+            <file>mudarra-pavana.mp3</file>
+            <titre>Une Pavana</titre>
+            <auteur>Alonso Mudarra</auteur>
+            <interprete>Hopkinson Smith</interprete>
+        </piste>
+        <piste>
+            <file>mudarra-romanesca</file>
+            <titre>Romanesca o Guárdame las vacas</titre>
+            <auteur>Alonso Mudarra</auteur>
+            <interprete>Hopkinson Smith</interprete>
+        </piste>
+    </instrument>
+</histoire>
