@@ -26,7 +26,8 @@
         <section id="origines">
             <h2>Les origines de l'instrument</h2>
             <p>On ne possède pas vraiment de traces d'un instrument de musique semblable à la guitare
-                telle qu'on la connaît aujourd'hui avant le XVIe siècle. On trouve néanmoins, des illustrations
+                telle qu'on la connaît aujourd'hui avant le XVI<sup>e</sup> siècle. On trouve néanmoins, des
+                illustrations
                 d'instuments de musique qui, de l'antiquité jusqu'au Moyen-Âge, possèdent des caractéristiques assez
                 proches
                 :</p>
@@ -39,66 +40,65 @@
         <section id="baroque">
             <h2>L'époque baroque</h2>
             <p>&Agrave; cette époque, deux instruments de la famille des cordes pincées dominent le paysage musical
-                européen ; la<span class="has-popup" id="vihuela" onclick="show_popup(this)"> vihuela </span>en Espagne
+                européen ; la <span class="has-popup" id="vihuela" onclick="show_popup(this)">vihuela</span> en Espagne
                 et
-                le<span class="has-popup" id="vihuela" onclick="show_popup(this)"> luth </span>dans le reste de
+                le <span class="has-popup" id="luth" onclick="show_popup(this)">luth</span> dans le reste de
                 l'Europe. Ces instruments servent la
                 plupart du temps d'instrument d'accompagnement des chanteurs.</p>
-            <p>C'est à cette même époque qu'un nouvel instrument va faire son apparition : la guiterne. Elle possède la
-                forme en huit (ou infini) de la vihuela et quatre cordes doublées comme sur le luth. Le doublage des
-                cordes permet d'obtenir un son puissant.</p>
+            <p>C'est à cette même époque qu'un nouvel instrument va faire son apparition : la <span class="has-popup"
+                    id="guiterne" onclick="show_popup(this)">guiterne</span> ; appellation en ancien français qui
+                donnera le mot "guitare". Elle possède la
+                forme en poire du <span class="has-popup" id="luth" onclick="show_popup(this)">luth</span> et quatre
+                cordes doublées (chaque paire de cordes est
+                appelé un
+                ch&oelig;ur). Le doublage des cordes permet d'obtenir un son puissant.</p>
+            <p>La <span class="has-popup" id="guitare-baroque" onclick="show_popup(this)">guitare baroque</span>
+                apparaît au XVII<sup>e</sup>. Elle est caractérisée par ses 5 ch&oelig;urs et se
+                répendra dans toutes les cours d'Europe. Louis XIV en fera son instrument de musique favorit.</p>
         </section>
         <section id="romantisme">
-            <h2>La guitare romantique</h2>
+            <h2>Naissance du romantisme</h2>
+            <p>
+                <span class="has-popup" id="guitare-romantique" onclick="show_popup(this)">La guitare romantique</span>
+                découle directement de la <span class="has-popup" id="guitare-baroque"
+                    onclick="show_popup(this)">guitare baroque</span>. Les 5 ch&oelig;eurs de sa grande so&oelig;ur
+                seront
+                remplacés par 6 cordes non doublées.<p>Elle fera le bonheur des amateurs de musique de chambre dans les
+                    salons des grandes maisons bourgeoises des XVIII<sup>e</sup> et XIX<sup>e</sup> siècles. Elle
+                    permettra
+                    la diffusion de l'instrument dans le monde entier grâce à des virtuoses et pédagogues comme Fernando
+                    Sor.</p>
+                <p>On assistera à cette époque à une véritable guitare-mania.</p>
+            </p>
         </section>
         <section id="post-romantisme">
             <h2>La guitare moderne</h2>
+            <p>
+                Mais <span class="has-popup" id="guitare-romantique" onclick="show_popup(this)">La guitare
+                    romantique</span> est peu puissante et sa diffusion reste limitée aux petits espaces et son
+                répertoire à la musique de chambre jouée en petite formation dans les salons.</p>
+            <p>
+                &Agrave; la fin du XIX<sup>e</sup> siècle, le luthier espagnol Antonio Torres met au point un instrument
+                avec une caisse de résonnance plus grande et un système de barrage de la table qui va permettre à la
+                guitare de se produire dans les grandes salles de concert et d'acquérir ainsi, une notoriété proche de
+                celle du piano. La guitare classique contemporaine est née.
+            </p>
+                Le modèle Torres perdure encore aujourd'hui même si de nouvelles innovation technologiques sont venues l'enrichir.
+            <p>
+
+            </p>
         </section>
-        <section id="xxe-siecle">
-            <h2>Le XXe siècle</h2>
-        </section>
-        <dialog class="popup">
-            <div class="closing-cross" title="Fermer" onclick="close_dialog()">X</div>
-            <img src="" title="" alt="" />
-            <!-- <div>
-                <h3>"Una Pavana"</h3>
-                <p>de Alonso Mudarra</p>
-                <audio controls>
-                    <source src="./audio/mudarra-pavana.mp3" type="audio/mpeg" />
-                </audio>
-            </div>
-            <div>
-                <h3>"Romanesca o Guárdame las vacas"</h3>
-                <p>de Alonso Mudarra</p>
-                <audio controls>
-                    <source src="./audio/mudarra-romanesca.mp3" type="audio/mpeg" />
-                </audio>
-            </div> -->
-        </dialog>
     </main>
     <footer>
         <p><a href="mentions-legales.html">Mentions légales</a></p>
         <p>&copy; 2022 David Bomard</p>
     </footer>
     <script type="text/javascript">
-        var $xml_data = "<instrument>" +
-                "<nom>vihuela</nom>" +
-                "<image>" +
-                    "<src>vihuela.jpg</src>" +
-                    "<title>Trobairitz, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons</title>" +
-                    "<alt>Jota Martinez vihuela</alt>" +
-                "</image>" +
-                "<piste>" +
-                    "<src>mudarra-pavana.mp3</src>" +
-                    "<h3>Una Pavana</h3>" +
-                    "<auteur>Alonso Mudarra</auteur>" +
-                "</piste>" +
-                "<piste>" +
-                    "<src>mudarra-romanesca</src>" +
-                    "<h3>Romanesca o Guárdame las vacas</h3>" +
-                    "<auteur>Alonso Mudarra</auteur>" +
-                "</piste>" +
-            "</instrument>"
+        var $xmlhttp, $xml_data;
+        $xmlhttp = new XMLHttpRequest();
+        $xmlhttp.open("GET", "./xml/data.xml", false);
+        $xmlhttp.send();
+        $xml_data = $xmlhttp.responseXML;
     </script>
     <script src="js/popup.js"></script>
 </body>

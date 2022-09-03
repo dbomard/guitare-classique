@@ -1,36 +1,66 @@
 /** script.js DBO20220816 **/
 
 function show_popup(param) {
-    let $parser = new DOMParser();
-    let $datas = $parser.parseFromString($xml_data, "text/xml");
-    let $instruments = $datas.getElementsByTagName("instrument");
+    let $focus_list = $xml_data.getElementsByTagName("focus");
     let i=0;
-    while($instruments[i].childNodes[0].innerHTML !== param.getAttribute("id"))
+    while($focus_list[i].children[0].innerHTML !== param.getAttribute("id"))
     {
         i++;
     }
-    let $instrument = $instruments[i];
-    let $image = $instrument.childNodes[1];
-    let $src = $image.childNodes[0].innerHTML;
-    let $title = $image.childNodes[1].innerHTML;
-    let $alt = $image.childNodes[2].innerHTML;
+    let $focus = $focus_list[i];
+    let $image = $focus.children[1];
+    let $src = $image.children[0].innerHTML;
+    let $title = $image.children[1].innerHTML;
+    let $alt = $image.children[2].innerHTML;
 
-    let $popup_dialog = document.querySelector("dialog");
-    let $img = document.querySelector("dialog img");
+    let $popup_dialog = document.createElement("dialog");
+    $popup_dialog.setAttribute("class", "popup");
+    document.querySelector("main").appendChild($popup_dialog);
+    
+    let $div = document.createElement("div");
+    $div.setAttribute("class", "closing-cross");
+    $div.setAttribute("title", "Fermer");
+    $div.setAttribute("onclick", "close_dialog()");
+    $div.innerText = "X";
+    $popup_dialog.appendChild($div);
+    
+    let $img = document.createElement("img");
     $img.setAttribute("src","./img/"+$src);
     $img.setAttribute("title",$title);
     $img.setAttribute("alt",$alt);
+    $popup_dialog.appendChild($img);
 
-    for(i=2;i<=$instrument.childNodes.length;i++){
-        alert($instrument.childNodes[i]);
+    for(i=2;i<$focus.children.length;i++){
+        $div = document.createElement("div");
+        $popup_dialog.appendChild($div);
+        
+        let $element = document.createElement("h3");
+        $element.innerText = $focus.children[i].children[1].innerHTML;
+        $div.appendChild($element);
+        
+        $element = document.createElement("p");
+        $element.innerText = $focus.children[i].children[2].innerHTML;
+        $div.appendChild($element);
+        
+        let $audio = document.createElement("audio");
+        $audio.setAttribute("controls", "");
+        $div.appendChild($audio);
+
+        let $source = document.createElement("source");
+        $source.setAttribute("src","./audio/"+$focus.children[i].children[0].innerHTML);
+        $source.setAttribute("type", "audio/mpeg");
+        $audio.appendChild($source);
     }
 
     $popup_dialog.showModal();
 }
 
 function close_dialog() {
+    let $dialog = document.querySelector("dialog");
     document.querySelector("audio").pause();
-    document.querySelector("dialog").close();
+    $dialog.innerHTML = "";
+    $dialog.close();
+    document.querySelector("main").removeChild($dialog);
 }
 
 function load_xml_file($path) {

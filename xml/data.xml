@@ -1,22 +1,72 @@
-<histoire>
-    <instrument>
+<xml>
+    <focus>
         <nom>vihuela</nom>
         <image>
             <src>vihuela.jpg</src>
-            <title>Trobairitz, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons</title>
+            <title>Trobairitz, CC BY-SA 4.0</title>
             <alt>Jota Martinez vihuela</alt>
         </image>
         <piste>
             <src>mudarra-pavana.mp3</src>
             <h3>Una Pavana</h3>
-            <auteur>Alonso Mudarra</auteur>
+            <auteur>Alonso 0Mudarra</auteur>
         </piste>
         <piste>
-            <src>mudarra-romanesca</src>
+            <src>mudarra-romanesca.mp3</src>
             <h3>Romanesca o Guárdame las vacas</h3>
             <auteur>Alonso Mudarra</auteur>
         </piste>
-
-    </instrument>
-</histoire>
-        <!-- <a href="https://commons.wikimedia.org/wiki/File:Luth_player-Giovanni_Busi_mg_9983.jpg">Photograph by Rama, Wikimedia Commons, Cc-by-sa-2.0-fr</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en">CC BY-SA 2.0 FR</a>, via Wikimedia Commons -->
+    </focus>
+    <focus>
+        <nom>luth</nom>
+        <image>
+            <src>luth.jpg</src>
+            <title>Joueur de luth par Giovanni Busi dit Cariani</title>
+            <alt>Photographie par Rama, Wikimedia Commons, Cc-by-sa-2.0-fr</alt>
+        </image>
+        <piste>
+            <src>bach-prelude.mp3</src>
+            <h3>Prélude - partita n°3 - BWV1006</h3>
+            <auteur>Jean-Sébastien Bach</auteur>
+        </piste>
+    </focus>
+    <focus>
+        <nom>guiterne</nom>
+        <image>
+            <src>guiterne.jpg</src>
+            <title>Guiterne fabriquée en 1450 par Hans Oth à Nürnberg</title>
+            <alt>Photographie par Ingersoll, Public domain, via Wikimedia Commons</alt>
+        </image>
+        <piste>
+            <src>bach-prelude.mp3</src>
+            <h3>Prélude - partita n°3 - BWV1006</h3>
+            <auteur>Jean-Sébastien Bach</auteur>
+        </piste>
+    </focus>
+    <focus>
+        <nom>guitare-baroque</nom>
+        <image>
+            <src>guitare-baroque.jpg</src>
+            <title>Guitare baroque, fabriquée par Matteo Seelos en 1653</title>
+            <alt>Photographie par Olaf Nyphus, Wikimedia Commons, CC BY-SA 3.0</alt>
+        </image>
+        <piste>
+            <src>bach-prelude.mp3</src>
+            <h3>Prélude - partita n°3 - BWV1006</h3>
+            <auteur>Jean-Sébastien Bach</auteur>
+        </piste>
+    </focus>
+    <focus>
+        <nom>guitare-romantique</nom>
+        <image>
+            <src>guitare-romantique.jpg</src>
+            <title>Guitare baroque, fabriquée par Matteo Seelos en 1653</title>
+            <alt>Photographie par Olaf Nyphus, Wikimedia Commons, CC BY-SA 3.0</alt>
+        </image>
+        <piste>
+            <src>bach-prelude.mp3</src>
+            <h3>Prélude - partita n°3 - BWV1006</h3>
+            <auteur>Jean-Sébastien Bach</auteur>
+        </piste>
+    </focus>
+</xml>
