@@ -59,10 +59,8 @@
         </section>
         <dialog class="popup">
             <div class="closing-cross" title="Fermer" onclick="close_dialog()">X</div>
-            <img src=""
-                title=""
-                alt="" />
-            <div>
+            <img src="" title="" alt="" />
+            <!-- <div>
                 <h3>"Una Pavana"</h3>
                 <p>de Alonso Mudarra</p>
                 <audio controls>
@@ -75,14 +73,33 @@
                 <audio controls>
                     <source src="./audio/mudarra-romanesca.mp3" type="audio/mpeg" />
                 </audio>
-            </div>
+            </div> -->
         </dialog>
     </main>
     <footer>
         <p><a href="mentions-legales.html">Mentions légales</a></p>
         <p>&copy; 2022 David Bomard</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        var $xml_data = "<instrument>" +
+            "<nom>vihuela</nom>" +
+            "<image>" +
+            "<src>vihuela.jpg</src>" +
+            "<title>Trobairitz, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons</title>" +
+            "<alt>Jota Martinez vihuela</alt>" +
+            "</image>" +
+            "<piste>" +
+            "<src>mudarra-pavana.mp3</src>" +
+            "<h3>Una Pavana</h3>" +
+            "<auteur>Alonso Mudarra</auteur>" +
+            "</piste>" +
+            "<piste>" +
+            "<src>mudarra-romanesca</src>" +
+            "<h3>Romanesca o Guárdame las vacas</h3>" +
+            "<auteur>Alonso Mudarra</auteur>" +
+            "</piste>" +
+            "</instrument>"
+    </script>
     <script src="js/popup.js"></script>
 </body>
 
