@@ -10,9 +10,10 @@ function show_popup(param) {
         i++;
     }
     let $instrument = $instruments[i];
-    let $src = $instrument.childNodes[0][1];
-    let $title = $instrument.childNodes[0][2];
-    let $alt = $instrument.childNodes[0][3];
+    let $image = $instrument.childNodes[0];
+    let $src = $image.childNodes[0].nodeValue;
+    let $title = $image.childNodes[1].nodeValue;
+    let $alt = $image.childNodes[2].nodeValue;
     
     let $popup_dialog = document.querySelector("dialog");
     let $img = document.querySelector("dialog img");
