@@ -10,16 +10,21 @@ function show_popup(param) {
         i++;
     }
     let $instrument = $instruments[i];
-    let $image = $instrument.childNodes[0];
-    let $src = $image.childNodes[0].nodeValue;
-    let $title = $image.childNodes[1].nodeValue;
-    let $alt = $image.childNodes[2].nodeValue;
-    
+    let $image = $instrument.childNodes[1];
+    let $src = $image.childNodes[0].innerHTML;
+    let $title = $image.childNodes[1].innerHTML;
+    let $alt = $image.childNodes[2].innerHTML;
+
     let $popup_dialog = document.querySelector("dialog");
     let $img = document.querySelector("dialog img");
-    $img.setAttribute("src","./img/"+$src.innerHTML);
-    $img.setAttribute("title",$title.innerHTML);
-    $img.setAttribute("alt",$alt.innerHTML);
+    $img.setAttribute("src","./img/"+$src);
+    $img.setAttribute("title",$title);
+    $img.setAttribute("alt",$alt);
+
+    for(i=2;i<=$instrument.childNodes.length;i++){
+        alert($instrument.childNodes[i]);
+    }
+
     $popup_dialog.showModal();
 }
 
