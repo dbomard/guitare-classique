@@ -23,9 +23,54 @@
     </header>
     <main>
         <h1>Les oeuvres</h1>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section id="etudes-villa-lobos">
+            <p>Les Douzes &Eacute;tures d'Hector Villa-Lobos, dédiée à Andrés Segovia, ont vu le jour à Paris en 1924,
+                pour être achevées en octobre 1928.</p>
+            <p>Elles montrent les multiples influences culturelles de Villa-Lobos, qui s'étend de la musique de Bach au
+                lyrisme romantique de Chopin, en passant par la musique traditionnelle brésilienne, présente aussi bien
+                dans sa forme urbaine que dans ses ascendances africaines et amazoniennes pour les dernières études.</p>
+            <div class="player">
+                <audio controls src="./audio/vl-etude1.mp3" type="audio/mpeg" id="etudes-player">
+                    Votre navigateur ne supporte pas html5
+                </audio>
+                <select name="vl-etudes" id="vl-etude" onchange="select_etude(this.value)">
+                    <option value="vl-etude1" selected>étude n°1</option>
+                    <option value="vl-etude2">étude n°2</option>
+                    <option value="vl-etude3">étude n°3</option>
+                    <option value="vl-etude4">étude n°4</option>
+                    <option value="vl-etude5">étude n°5</option>
+                    <option value="vl-etude6">étude n°6</option>
+                    <option value="vl-etude7">étude n°7</option>
+                    <option value="vl-etude8">étude n°8</option>
+                    <option value="vl-etude9">étude n°9</option>
+                    <option value="vl-etude10">étude n°10</option>
+                    <option value="vl-etude11">étude n°11</option>
+                    <option value="vl-etude12">étude n°12</option>
+                </select>
+            </div>
+        </section>
+        <section id="jeux-interdits">
+            <p>Cette musique fut utilisée en 1952 pour le film "Jeux interdits" de René Clément, dont elle a fini par
+                prendre le nom. </p>
+            <p>Tout d'abord intitulé romance, le morceau est souvent attribué à tord à Narcisso Yepes qui
+                l'interprète à cette occasion. </p>
+            <div>
+                <audio src="./audio/yepes-jeux-interdits.mp3" type="audio/mpeg" controls>
+                    Votre navigateur ne supporte pas html5
+                </audio>
+            </div>
+        </section>
+        <section id="tarrega-valse">
+            <p>La grande Valse de Tarrega n'est, a priori pas sa composition la plus connue. Cependant, sans le savoir,
+                la plupart d'entre nous l'ont déjà entendu grâce au constructeur de téléphones portables Nokia qui en
+                avait utilisé un extrait comme sonnerie.</p>
+            <div>
+                <audio src="./audio/tarrega-gran-vals.mp3" type="audio/mpeg" id="ft-valse" controls>
+                    Votre navigateur ne supporte pas html5
+                </audio>
+                <button onclick="go_nokia()">Ecouter Nokia</button>
+            </div>
+        </section>
         <section></section>
         <section></section>
     </main>
@@ -33,7 +78,27 @@
         <p><a href="mentions-legales.html">Mentions légales</a></p>
         <p>&copy; 2022 David Bomard</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script>
+        var $etudes_player = document.querySelector("#etudes-player");
+        var $valse_player = document.querySelector("#ft-valse");
+
+        function select_etude($track) {
+            let $playing = false;
+            if (!$etudes_player.paused) {
+                $playing = true;
+                $etudes_player.pause();
+            }
+            $etudes_player.setAttribute("src", "./audio/" + $track + ".mp3");
+            if ($playing)
+                $etudes_player.play();
+        }
+
+        function go_nokia() {
+            $valse_player.currentTime = 11.75;
+            if ($valse_player.paused)
+                $valse_player.play();
+        }
+    </script>
 </body>
 
 </html>
