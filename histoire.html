@@ -1,4 +1,4 @@
-<!-- histoire.html DBO20220816-->
+<!-- histoire.html DBO20220904-->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -42,7 +42,8 @@
             <p>&Agrave; cette époque, deux instruments de la famille des cordes pincées dominent le paysage musical
                 européen ; la <span class="has-popup" id="vihuela" onclick="show_popup(this)">vihuela</span> en Espagne
                 et
-                le <span class="has-popup" id="luth" onclick="show_popup(this)">luth</span> dans le reste de
+                le <span class="has-popup" id="luth" onclick="show_popup(this)" onfocus="focus()">luth</span> dans le
+                reste de
                 l'Europe. Ces instruments servent la
                 plupart du temps d'instrument d'accompagnement des chanteurs.</p>
             <p>C'est à cette même époque qu'un nouvel instrument va faire son apparition : la <span class="has-popup"
@@ -59,7 +60,7 @@
         <section id="romantisme">
             <h2>Naissance du romantisme</h2>
             <p>
-                <span class="has-popup" id="guitare-romantique" onclick="show_popup(this)">La guitare romantique</span>
+                La <span class="has-popup" id="guitare-romantique" onclick="show_popup(this)">guitare romantique</span>
                 découle directement de la <span class="has-popup" id="guitare-baroque"
                     onclick="show_popup(this)">guitare baroque</span>. Les 5 ch&oelig;eurs de sa grande so&oelig;ur
                 seront
@@ -72,18 +73,20 @@
             </p>
         </section>
         <section id="post-romantisme">
-            <h2>La guitare moderne</h2>
+            <h2>Le génie de Torres</h2>
             <p>
-                Mais <span class="has-popup" id="guitare-romantique" onclick="show_popup(this)">La guitare
+                Mais La <span class="has-popup" id="guitare-romantique" onclick="show_popup(this)">guitare
                     romantique</span> est peu puissante et sa diffusion reste limitée aux petits espaces et son
                 répertoire à la musique de chambre jouée en petite formation dans les salons.</p>
             <p>
                 &Agrave; la fin du XIX<sup>e</sup> siècle, le luthier espagnol Antonio Torres met au point un instrument
                 avec une caisse de résonnance plus grande et un système de barrage de la table qui va permettre à la
                 guitare de se produire dans les grandes salles de concert et d'acquérir ainsi, une notoriété proche de
-                celle du piano. La guitare classique contemporaine est née.
+                celle du piano. La <span class="has-popup" id="guitare-torres" onclick="show_popup(this)">guitare
+                    classique</span> contemporaine est née.
             </p>
-                Le modèle Torres perdure encore aujourd'hui même si de nouvelles innovation technologiques sont venues l'enrichir.
+            Le modèle Torres perdure encore aujourd'hui même si de nouvelles innovation technologiques sont venues
+            l'enrichir.
             <p>
 
             </p>
@@ -93,14 +96,8 @@
         <p><a href="mentions-legales.html">Mentions légales</a></p>
         <p>&copy; 2022 David Bomard</p>
     </footer>
-    <script type="text/javascript">
-        var $xmlhttp, $xml_data;
-        $xmlhttp = new XMLHttpRequest();
-        $xmlhttp.open("GET", "./xml/data.xml", false);
-        $xmlhttp.send();
-        $xml_data = $xmlhttp.responseXML;
-    </script>
-    <script src="js/popup.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/popup.js" type="text/javascript"></script>
 </body>
 
 </html>

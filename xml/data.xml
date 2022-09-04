@@ -9,7 +9,7 @@
         <piste>
             <src>mudarra-pavana.mp3</src>
             <h3>Una Pavana</h3>
-            <auteur>Alonso 0Mudarra</auteur>
+            <auteur>Alonso Mudarra</auteur>
         </piste>
         <piste>
             <src>mudarra-romanesca.mp3</src>
@@ -37,11 +37,6 @@
             <title>Guiterne fabriquée en 1450 par Hans Oth à Nürnberg</title>
             <alt>Photographie par Ingersoll, Public domain, via Wikimedia Commons</alt>
         </image>
-        <piste>
-            <src>bach-prelude.mp3</src>
-            <h3>Prélude - partita n°3 - BWV1006</h3>
-            <auteur>Jean-Sébastien Bach</auteur>
-        </piste>
     </focus>
     <focus>
         <nom>guitare-baroque</nom>
@@ -51,9 +46,14 @@
             <alt>Photographie par Olaf Nyphus, Wikimedia Commons, CC BY-SA 3.0</alt>
         </image>
         <piste>
-            <src>bach-prelude.mp3</src>
-            <h3>Prélude - partita n°3 - BWV1006</h3>
-            <auteur>Jean-Sébastien Bach</auteur>
+            <src>sanz-canarios.mp3</src>
+            <h3>Canarios</h3>
+            <auteur>Gaspar Sanz</auteur>
+        </piste>
+        <piste>
+            <src>sanz-folias.mp3</src>
+            <h3>Folas</h3>
+            <auteur>Gaspar Sanz</auteur>
         </piste>
     </focus>
     <focus>
@@ -64,9 +64,42 @@
             <alt>Photographie par Olaf Nyphus, Wikimedia Commons, CC BY-SA 3.0</alt>
         </image>
         <piste>
-            <src>bach-prelude.mp3</src>
-            <h3>Prélude - partita n°3 - BWV1006</h3>
-            <auteur>Jean-Sébastien Bach</auteur>
+            <src>sor-andante-maestoso.mp3</src>
+            <h3>Andante maetoso</h3>
+            <auteur>Fernando Sor</auteur>
+        </piste>
+        <piste>
+            <src>carulli-guitar-sonatina-op59.mp3</src>
+            <h3>Sonatine pour guitare op.59</h3>
+            <auteur>Ferdinando Carulli</auteur>
+        </piste>
+        <piste>
+            <src>giuliani-guitar-sonata-op15.mp3</src>
+            <h3>Sonate pour guitare op.15</h3>
+            <auteur>Mauro Giuliani</auteur>
+        </piste>
+    </focus>
+    <focus>
+        <nom>guitare-torres</nom>
+        <image>
+            <src>guitare-torres.jpg</src>
+            <title>Guitare fabriquée par Antonio Torres</title>
+            <alt>Photographie sguastevi, Wikimedia Commons, CC BY-SA 3.0</alt>
+        </image>
+        <piste>
+            <src>tarrega-recuerdos-alhambra.mp3</src>
+            <h3>Recuerdos de la Alhambra</h3>
+            <auteur>Francisco Tárrega</auteur>
+        </piste>
+        <piste>
+            <src>lauro-vals-venezolano3.mp3</src>
+            <h3>Valse vénézuelienne n°3</h3>
+            <auteur>Antonio Lauro</auteur>
+        </piste>
+        <piste>
+            <src>yepes-jeux-interdits.mp3</src>
+            <h3>Jeux interdits</h3>
+            <auteur>Narcisso Yepes</auteur>
         </piste>
     </focus>
 </xml>

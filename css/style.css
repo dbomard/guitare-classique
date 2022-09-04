@@ -26,9 +26,11 @@ h1{
 
 section{
     background-color: #799482;
+    background-image: url("./img/antiquite.jpg");
     color: #FCF8E8;
     padding: 5px 20px;
     box-shadow: 5px 8px 8px 5px #555555;
+    border-radius: 10px;
 }
 
 section:nth-of-type(2n+1){
@@ -40,6 +42,7 @@ section:nth-of-type(2n){
 
 
 /* Dialog d'écoute */
+
 dialog::backdrop {
     background-color: rgba(109, 31, 0, 0.664);
 }
@@ -92,7 +95,7 @@ main .has-popup:nth-of-type(4n+3) {
 }
 
 .popup {
-    position: relative;
+    position: absolute;
     padding: 10px;
     background-color: #FCF8E8;
     border: none;
