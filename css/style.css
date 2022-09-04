@@ -47,7 +47,7 @@ dialog::backdrop {
     background-color: rgba(109, 31, 0, 0.664);
 }
 
-/* Effet popup */
+/* Effet popup d'écoute */
 .has-popup {
     border: #FCF8E8 solid 2px;
     border-radius: .5em;
@@ -145,6 +145,46 @@ audio::-webkit-media-controls-panel {
 audio {
     border: none;
     max-width: 256px;
+}
+
+
+/* Popup des portraits */
+.portrait{
+    position: relative;
+}
+
+.portrait:hover{
+        cursor: pointer;
+}
+
+.portrait:hover .portrait-popup{
+    display: inline-block;
+    visibility: visible;
+    width: 256px;
+    height: 256px;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear, width .2s linear, height .2s linear;
+}
+.portrait-popup{
+    position: absolute;
+    bottom: -5em;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px #555555;
+}
+.portrait:hover .portrait-popup img{
+    width: 256px;
+    height: auto;
+    transition: width .2s linear;
+}
+
+.portrait-popup img{
+    width: 0px;
+    height: auto;
+    border-radius: 50%;
 }
 
 /* Header */
