@@ -1,10 +1,4 @@
 /** style.css DBO20220816 **/
-:root {
-    --creme: #FCF8E8;
-    --green: #799482;
-    --orange: #ECB390;
-    --red: #d4725c;
-}
 
 /* Corps de page */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,402;0,700;1,300;1,400;1,700&display=swap');
@@ -151,7 +145,6 @@ section:nth-of-type(2n) {
     width: 100%;
     min-height: 150px;
     position: absolute;
-    /* opacity: 50%; */
     z-index: 50;
     border-radius: 10px;
     object-fit: cover;
@@ -171,8 +164,6 @@ section:nth-of-type(2n) {
     opacity: 100%;
     transition: opacity .2s ease-in-out;
 }
-
-
 
 /* Dialog d'écoute */
 
@@ -205,7 +196,6 @@ main .has-popup:nth-of-type(4n+3) {
     animation-delay: 3.58s;
 }
 
-
 @keyframes scale {
 
     0%,
@@ -236,7 +226,6 @@ main .has-popup:nth-of-type(4n+3) {
     border-radius: 10px;
     max-width: 256px;
 }
-
 
 h3 {
     font-size: medium;
@@ -279,7 +268,6 @@ audio {
     border: none;
     max-width: 256px;
 }
-
 
 /* Popup des portraits */
 .portrait {
