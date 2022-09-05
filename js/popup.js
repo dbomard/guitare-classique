@@ -3,7 +3,7 @@
 function show_popup(param) {
     let $focus_list = $xml_data.getElementsByTagName("focus");
     let i = 0;
-    while ($focus_list[i].children[0].innerHTML !== param.getAttribute("id")) {
+    while ($focus_list[i].children[0].innerHTML !== param.innerText) {
         i++;
     }
     let $focus = $focus_list[i];

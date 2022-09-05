@@ -6,11 +6,14 @@
     <meta charset="UTF-8">
     <title>Liens</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <header>
         <img src="img/logo_guitare.svg" alt="logo du site" id="logo" />
+        <input type="checkbox" id="menu-toggle" />
         <nav>
             <ul>
                 <li><a href="index.html" data-hover="Accueil">Accueil</a></li>
@@ -20,10 +23,12 @@
                 <li class="current"><a href="#" data-hover="Liens">Liens</a></li>
             </ul>
         </nav>
+        <label for="menu-toggle"><img id="menu-access" src="./img/menu-access.svg" alt="menu" /></label>
     </header>
     <main>
         <h1>Liens</h1>
         <section class="link">
+            <h2>Siccas Guitars</h2>
             <a href="https://www.youtube.com/c/SiccasGuitars/" target="_blank"><img title="Siccas Guitars"
                     src="./img/logo_siccas.png" alt="Chaine Youtube de Siccas Guitars" /></a>
             <p>Le site "Siccas Guitars" est spécialisé dans la distribution de guitares classiques fabriquées par des
@@ -31,11 +36,13 @@
                 dans l'interprétation de grandes pièces du répertoire jouées sur des guitares prestigieuses</p>
         </section>
         <section class="link">
+            <h2>La Guitarreria</h2>
             <a href="https://www.laguitarreriadeparis.com/" target="_blank"><img src="./img/logo_guitarreria.png"
                     title="La Guitarreria" alt="La Guitarreria de Paris" /></a>
             <p>Le magasin "La Guitarreria" de Paris est spécialisé dans la vente de guitares classiques et flamenca.</p>
         </section>
         <section class="link">
+            <h2>Delcamp.net</h2>
             <a href="https://www.guitareclassiquedelcamp.com/index.php" target="_blank"><img src="./img/delcamp.png"
                     title="Jean-François Delcamp" alt="Delcamp.net"></a>
             <p>Passionné de guitare, Jean-François Delcamp anime depuis 2001 un forum consacré à l'instrument. Que l'on
@@ -46,7 +53,7 @@
         <p><a href="mentions-legales.html">Mentions légales</a></p>
         <p>&copy; 2022 David Bomard</p>
     </footer>
-    <script src="js/script.js"></script>
 </body>
+<script src="js/script.js"></script>
 
 </html>

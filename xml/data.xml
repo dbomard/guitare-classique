@@ -39,7 +39,7 @@
         </image>
     </focus>
     <focus>
-        <nom>guitare-baroque</nom>
+        <nom>guitare baroque</nom>
         <image>
             <src>guitare-baroque.jpg</src>
             <title>Guitare baroque, fabriquée par Matteo Seelos en 1653</title>
@@ -57,7 +57,7 @@
         </piste>
     </focus>
     <focus>
-        <nom>guitare-romantique</nom>
+        <nom>guitare romantique</nom>
         <image>
             <src>guitare-romantique.jpg</src>
             <title>Guitare baroque, fabriquée par Matteo Seelos en 1653</title>
@@ -80,7 +80,7 @@
         </piste>
     </focus>
     <focus>
-        <nom>guitare-torres</nom>
+        <nom>guitare classique</nom>
         <image>
             <src>guitare-torres.jpg</src>
             <title>Guitare fabriquée par Antonio Torres</title>

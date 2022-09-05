@@ -11,6 +11,7 @@
 <body>
     <header>
         <img src="img/logo_guitare.svg" alt="logo du site" id="logo" />
+        <input type="checkbox" id="menu-toggle" />
         <nav>
             <ul>
                 <li><a href="index.html" data-hover="Accueil">Accueil</a></li>
@@ -20,17 +21,19 @@
                 <li><a href="liens.html" data-hover="Liens">Liens</a></li>
             </ul>
         </nav>
+        <label for="menu-toggle"><img id="menu-access" src="./img/menu-access.svg" alt="menu"/></label>
     </header>
     <main>
         <h1>Les oeuvres</h1>
         <section id="etudes-villa-lobos">
+            <h2>Les Douzes &Eacute;tudes</h2>
             <p>Les Douzes &Eacute;tures d'Hector Villa-Lobos, dédiée à Andrés Segovia, ont vu le jour à Paris en 1924,
                 pour être achevées en octobre 1928.</p>
             <p>Elles montrent les multiples influences culturelles de Villa-Lobos, qui s'étend de la musique de Bach au
                 lyrisme romantique de Chopin, en passant par la musique traditionnelle brésilienne, présente aussi bien
                 dans sa forme urbaine que dans ses ascendances africaines et amazoniennes pour les dernières études.</p>
             <div class="player">
-                <audio controls src="./audio/vl-etude1.mp3" type="audio/mpeg" id="etudes-player">
+                <audio controls src="./audio/vl-etude1.mp3" id="etudes-player">
                     Votre navigateur ne supporte pas html5
                 </audio>
                 <select name="vl-etudes" id="vl-etude" onchange="select_etude(this.value)">
@@ -50,22 +53,24 @@
             </div>
         </section>
         <section id="jeux-interdits">
+            <h2>Jeux interdits</h2>
             <p>Cette musique fut utilisée en 1952 pour le film "Jeux interdits" de René Clément, dont elle a fini par
                 prendre le nom. </p>
             <p>Tout d'abord intitulé romance, le morceau est souvent attribué à tord à Narcisso Yepes qui
                 l'interprète à cette occasion. </p>
-            <div>
-                <audio src="./audio/yepes-jeux-interdits.mp3" type="audio/mpeg" controls>
+            <div class="player">
+                <audio src="./audio/yepes-jeux-interdits.mp3" controls>
                     Votre navigateur ne supporte pas html5
                 </audio>
             </div>
         </section>
         <section id="tarrega-valse">
+            <h2>Gran Vals</h2>
             <p>La grande Valse de Tarrega n'est, a priori pas sa composition la plus connue. Cependant, sans le savoir,
                 la plupart d'entre nous l'ont déjà entendu grâce au constructeur de téléphones portables Nokia qui en
                 avait utilisé un extrait comme sonnerie.</p>
-            <div>
-                <audio src="./audio/tarrega-gran-vals.mp3" type="audio/mpeg" id="ft-valse" controls>
+            <div class="player">
+                <audio src="./audio/tarrega-gran-vals.mp3" id="ft-valse" controls>
                     Votre navigateur ne supporte pas html5
                 </audio>
                 <button onclick="go_nokia()">Ecouter Nokia</button>

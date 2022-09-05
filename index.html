@@ -13,6 +13,7 @@
 <body>
     <header>
         <img src="img/logo_guitare.svg" alt="logo du site" id="logo" />
+        <input type="checkbox" id="menu-toggle" />
         <nav>
             <ul>
                 <li class="current"><a href="#" data-hover="Accueil">Accueil</a></li>
@@ -22,26 +23,35 @@
                 <li><a href="liens.html" data-hover="Liens">Liens</a></li>
             </ul>
         </nav>
+        <label for="menu-toggle"><img id="menu-access" src="./img/menu-access.svg" alt="menu" /></label>
     </header>
     <main id="accueil">
         <h1>la Guitare Classique</h1>
         <img id="logo-intro" src="./img/logo_guitare.svg" alt="">
         <div id="blocs">
             <div class="bloc">
-                <a href="histoire.html"><h2>L'histoire de l'instrument</h2></a>
-                <img src="./img/guitare-romantique.jpg" class="background">
+                <a href="histoire.html">
+                    <h2>L'histoire de l'instrument</h2>
+                </a>
+                <img src="./img/guitare-romantique.jpg" class="background" alt="histoire" />
             </div>
             <div class="bloc">
-                <a href="guitaristes.html"><h2>Les guitaristes</h2></a>
-                <img src="./img/francisco-tarrega.jpg" class="background">
+                <a href="guitaristes.html">
+                    <h2>Les guitaristes</h2>
+                </a>
+                <img src="./img/francisco-tarrega.jpg" class="background" alt="guitaristes" />
             </div>
             <div class="bloc">
-                <a href="oeuvres.html"><h2>Les &oelig;uvres</h2></a>
-                <img src="./img/partition.jpg" class="background">
+                <a href="oeuvres.html">
+                    <h2>Les &oelig;uvres</h2>
+                </a>
+                <img src="./img/partition.jpg" class="background" alt="partitions célèbres" />
             </div>
             <div class="bloc">
-                <a href="liens.html"><h2>Poursuivre la découverte</h2></a>
-                <img src="./img/links.svg" class="background">
+                <a href="liens.html">
+                    <h2>Poursuivre la découverte</h2>
+                </a>
+                <img src="./img/links.svg" class="background" alt="liens internet" />
             </div>
         </div>
     </main>
